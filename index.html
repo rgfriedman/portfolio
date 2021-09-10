@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Rachael Friedman Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -64,26 +64,36 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Washington DC Airbnb Popularity Predictor</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <div class="subheading mb-3">Github Repo · Steamlit App</div>
+                            <p>The goal of this project was to build a model that predicts the popularity of Airbnb listings in Washington DC and returns recommendations on what to add to the listing to increase its chance of being popular. Popularity for this project is defined as a listing having a 4.8 overall rating or above and at least 60 total reviews.</p>
+
+                            <p>Data was collected on 8,000 Washington DC listings from Inside Airbnb’s publicly available data and overlayed with venue data on Washington DC neighborhoods from a Foursquare API pull. The listings were cleaned using a combination of feature engineering and natural language processing techniques to prepare for modeling.</p>
+
+                            <p>The best predictive model and best interpretive model were deployed together in the app for hosts to generate a popularity prediction and recommendations. An Extra Trees Classifier paired with oversampling the minority class was the best model at predicting listing popularity, with an 85% accuracy rate on testing data compared to a 77% baseline. The best interpretive model was Logistic Regression, with an 84% accuracy rate on testing data compared to a 77% baseline, and the coefficients were used to produce listing improvement recommendations.</p>
+
+
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Austin Animal Center Adoption Predictor</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <div class="subheading mb-3">Github Repo</div>
+
+                            <p>The goal of this project was to collaborate with data scientist peers and build a model that predicts an adoption outcome for animals taken into the Austin City Animal Center. This shelter is a no-kill shelter, so this model will help with better planning for capacity at the shelter by predicting which animals are likely to be adopted.</p>
+                            <p>Data on 150,000 animal intakes at the shelter were provided from the Austin, Texas government data site. The data was thoroughly cleaned and prepared for modeling. Best performing models for the six different animal intake types were developed using a Gradient Boosting Classifier for each. For the most common intake type of stray animals, the model showed a 83% accuracy score on testing data compared to a 55% baseline score. These models were deployed together in an app that the Austin City Animal Center can use to generate predictions on their new incoming animals.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
+
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Subreddit Post Predictor</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                            <div class="subheading mb-3">Github Repo</div>
+                            <p>The goal for this project was to build a model using natural language processing techniques to predict whether a given post came from the AskWomen or AskMen subreddit and explore the differences in topics of conversation for each group.
+                              <br><br>
+                              Using Pushshift’s API, 50,000 subreddit posts from both AskWomen and AskMen were collected. The posts were then cleaned and count vectorized to prepare for modeling. The Naïve Bayes model performed the best at predicting which subreddit a given post came from with a 72% accuracy rate on testing data compared to a 50% baseline. The upper limit on accuracy scores remained in the low 70s, as it turns out the topics of conversation in the AskWomen and AskMen are very similar when looking at the most common words and phrases.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
+
 
                     </div>
                 </div>
@@ -155,8 +165,11 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <p>
+                    As a data analytics consultant turned data scientist, I enjoy reading about and exploring different data science concepts in my free time.
+                    Currently, I am working on building a podcast recommender system.
+                   </p>
+                    <p class="mb-0">When I am not focused on data science, I love playing volleyball, reading a good book, exploring new restaurants with friends, and going on long walks with my dog, Peanut. </p>
                 </div>
             </section>
         </div>
